@@ -2,3 +2,8 @@
 SELECT Person.firstName, Person.lastName, Address.city, Address.state
 FROM Person
 LEFT JOIN Address ON Person.personID = Address.personID
+
+# NOTES
+# INNER JOIN : only input the data if from Person.personID = Address.personID
+# LEFT JOIN : Person will be the base for checking, if the personID exist in Person but not in Address' personID, it will still be included but NULL
+# RIGHT JOIN: Address will be the base for checking, if the personID exist in Address but not in Person's personID, it will still be included but NULL
