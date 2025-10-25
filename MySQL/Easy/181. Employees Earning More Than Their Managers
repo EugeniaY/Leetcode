@@ -1,0 +1,11 @@
+# Write your MySQL query statement below
+SELECT 
+    E.name as Employee #Display Employee as the column name
+FROM
+    Employee AS E #E as the Employee
+JOIN
+    Employee AS M #M as the Manager
+ON
+    E.managerId = M.id # E is saving their managerId, M has the id in id column 
+WHERE
+    E.salary > M.salary #comparing salary employee and manager
